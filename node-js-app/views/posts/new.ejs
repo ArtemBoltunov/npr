@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создать пост</title>
+</head>
+<body>
+    <h1>Создать новый пост</h1>
+    <form action="/posts" method="POST">
+        <div>
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="body">Содержание:</label>
+            <textarea id="body" name="body" required></textarea>
+        </div>
+        <button type="submit">Создать</button>
+    </form>
+</body>
+</html>
