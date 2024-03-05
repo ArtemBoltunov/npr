@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список постов</title>
+</head>
+<body>
+    <h1>Посты</h1>
+    <a href="/posts/new">Создать новый пост</a>
+    <ul>
+        <% posts.forEach(post => { %>
+            <li><%= post.title %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
